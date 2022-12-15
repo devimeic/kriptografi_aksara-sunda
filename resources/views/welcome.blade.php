@@ -11,7 +11,7 @@
 	border:none;
 	margin:0px;
 	padding:0px;
-	font-family:Courier, monospace;
+	font-family:Courier, monospace,'Noto Sans Sundanese', sans-serif;
 }
 body {
 	background:#333 url(https://static.tumblr.com/maopbtg/a5emgtoju/inflicted.png) repeat;
@@ -140,7 +140,11 @@ h2{
   transform: translate(0, 5%);
 }
 
-  </style>
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Sundanese&display=swap'); </style>
+
+
+
+  <!-- </styl> -->
 </head>
 <body >
 <div>
@@ -218,11 +222,11 @@ h2{
           $(".result").html(
             "<h6 class='text fw-bold'>Hasil: </h6>" +
             "<textarea id='result' rows='1' class='bg-warning p-3 mt-3 border-0 form-control' readonly style='white-space: pre-line;overflow-y: scroll;'>" +
-                "layer 3 = "+hasil+
+                "layer 2 = "+hasil+
 
             "</textarea>" +
             "<textarea id='result' rows='1' class='bg-warning p-3 mt-3 border-0 form-control' readonly style='white-space: pre-line; overflow-y: scroll;'>" +
-                "layer aksara sunda = "+window.sunda.toSundanese(hasil)+
+                "layer 3 aksara sunda = "+window.sunda.toSundanese(hasil)+
 
             "</textarea>"
 
